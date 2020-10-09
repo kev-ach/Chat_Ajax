@@ -9,7 +9,7 @@
 <body>
   <header>
     <h1>Chat en AJAX</h1>
-    <h3>Utilisation de PHP, MySQL, Javascript, Requete Ajax, HTML, CSS</h3>
+    <h3>Utilisation de PHP, MySQL, Javascript, Requête Ajax, HTML, CSS</h3>
   </header>
 
   <section class="chat">
