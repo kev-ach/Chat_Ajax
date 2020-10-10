@@ -4,7 +4,7 @@
  * Connexion simple à la base de données via PDO !
  */
 $db = new PDO('mysql:host=localhost;dbname=chat;charset=utf8', 'root', '', [
-    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, 
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
 ]);
 
@@ -42,10 +42,10 @@ function getMessages(){
 function postMessage(){
   global $db;
   // 1. Analyser les paramètres passés en POST (author, content)
-  
+
   if(!array_key_exists('author', $_POST) || !array_key_exists('content', $_POST)){
 
-    echo json_encode(["status" => "error", "message" => "One field or many have not been sent"]);
+    echo json_encode(["status" => "error", "message" => "Un champ ou plusieurs n'ont pas été envoyés"]);
     return;
 
   }
@@ -64,6 +64,3 @@ function postMessage(){
   // 3. Donner un statut de succes ou d'erreur au format JSON
   echo json_encode(["status" => "success"]);
 }
-/**
- * Voilà c'est tout en gros.
- */
