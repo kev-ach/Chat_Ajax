@@ -1,5 +1,5 @@
 /**
- * Codons un chat en HTML/CSS/Javascript avec nos amis PHP et MySQL
+ * Codons un chat en HTML/CSS/Javascript avec PHP et MySQL
  */
 
 /**
